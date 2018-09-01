@@ -140,3 +140,5 @@ async function generatePointsSummary(sprintName) {
   const pointsTotal = sum(issues.map((issue) => issue.points));
   return `Goal Completion: ${(pointsDone / pointsTotal) * 100}% (${pointsDone} points out of ${pointsTotal})`;
 }
+
+console.log('Loaded Jira scripts. Docs: https://github.com/benchling/benchling-jira-scripts');
